@@ -8,7 +8,7 @@
 - Tema: Implementando grafos em python
 - Tempo estimado: 4 horas
 - Contribuídores:
-    - Arthur Souza Cruz
+    - Arthur Henrique Sousa Cruz
     - Eduardo Fernando de Lima
     - Gabriel Ribeiro Oliveira
 <hr>
