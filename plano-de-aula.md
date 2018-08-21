@@ -19,7 +19,7 @@
 ## Objetivos específicos:
 - Apresentar brevemente a linguagem Python3
 - Apresentar o funcionamento e a aplicação de estruturas de dados primitivas em Python
-- Implementação de um grafo utilizando duas das três estruturas de dados básicas, sendo elas Lista de Adjacência, Matriz de Adjacência.
+- Implementação de um grafo utilizando duas das três estruturas de dados básicas, sendo elas Lista de Adjacência e Matriz de Adjacência.
 
 ## Metodologia de ensino
 
