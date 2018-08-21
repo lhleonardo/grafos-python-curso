@@ -19,8 +19,8 @@
 ## Objetivos específicos:
 - Apresentar brevemente a linguagem Python3
 - Apresentar o funcionamento e a aplicação de estruturas de dados primitivas em Python
-- Implementação de um grafo
 - Implementação dos algoritmos "Breadth-First Search - BFS" (Busca em largura) e "Depth-First Search - DFS " (Busca em profundidade)
+- Implementação de um grafo utilizando uma das seguintes estruturas de dados básicas: Lista de Adjacência ou Matriz de Adjacência.
 
 ## Metodologia de ensino
 
