@@ -34,6 +34,8 @@ Aula expositiva e prática, contemplando:
 ## Referências Bibliográficas
 - T.H. Cormen, C.E. Leiserson, R.L. Rivest, C. Stein,  Introduction to Algorithms, 3rd edition,  MIT Press, 2009.
 
+- Oliveira, Sanderson Lincohn Gonzaga de, Algoritmos e seus fundamentos, Editora UFLA, 2011.
+
 - Slides de aula disponibilizados pelo professor Mayron César de Oliveira Moreira da Universidade Federal de Lavras
 
 
