@@ -21,12 +21,12 @@ class MatrizAdjacencia:
     def escreveMatriz(self):
         saida = "\t"
         for linha in self._matriz:
-            saida += linha + "\t"
+            saida += str(linha) + "\t"
         saida += "\n"
         for coluna in self._matriz:
-            saida += coluna
+            saida += str(coluna)
             for linha in self._matriz:
-                saida += ("\t" + self._matriz[linha][coluna])
+                saida += ("\t" + str(self._matriz[linha][coluna]))
             saida += "\n"
         print(saida)
 
