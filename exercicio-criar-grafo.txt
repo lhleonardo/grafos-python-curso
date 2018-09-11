@@ -1,0 +1,4 @@
+Um amigo dos palestrantes deseja armazenar as relações de seus grupo de amigos no formato de um grafo.
+Ele quer que o grafo possa ser acessado a partir dos nomes (que são únicos) de seus amigos para que ele possa ver a relação entre eles.
+Por exemplo, ele quer que seja armazenado o nome Carlos e Manuel e que haja uma relação de amizade entre eles.
+Utilizando seus conhecimentos em python, crie uma Matriz de Adjacência ou uma Lita de Adjacência para representar essas relações no formato de grafos.
