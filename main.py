@@ -1,5 +1,5 @@
 from Estruturas.MatrizAdjacencia import MatrizAdjacencia
-
+from Estruturas.ListaAdjacencia import ListaAdjacencia
 def main():
     matriz = MatrizAdjacencia()
     matriz.adicionaVertice("thuza")
@@ -9,6 +9,16 @@ def main():
     matriz.adicionaAresta("thuza", "humil", "parser2")
     matriz.adicionaAresta("ribo", "humil", "topparser")
 
-    matriz.escreveMatriz()
+    print(matriz)
+
+    lista = ListaAdjacencia()
+    lista.adicionaVertice("thuza")
+    lista.adicionaVertice("ribo")
+    lista.adicionaVertice("humil")
+    lista.adicionaAresta("thuza", "ribo", "parser")
+    lista.adicionaAresta("thuza", "humil", "parser2")
+    lista.adicionaAresta("ribo", "humil", "topparser")
+
+    print(lista)
 
 main()
