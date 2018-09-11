@@ -1,15 +1,20 @@
 from Estruturas.Lista import Lista
+from Estruturas.Vertice import Vertice
 
 class ListaAdjacencia:
     listaAdj = None
-    
+    vertices = None
+
     def __init__(self):
         self.listaAdj = {}
+        self.vertices = {}
     
     def adicionaVertice(self, nome):
-        if(nome in self.listaAdj):
+        if(nome in self.vertices):
             return "Item ja inserido"
         
+        v = Vertice(nome)
+        self.vertices[nome] = v
         self.listaAdj[nome] = Lista()
 
     def adicionaAresta(self, nomeV1, nomeV2, relacao):
@@ -26,3 +31,12 @@ class ListaAdjacencia:
             saida += str(elemento) + ": " + str(self.listaAdj[elemento]) + "\n"
         
         return saida
+
+    def saoVizinhos(self, v1, v2):
+        if(v1 not in self.listaAdj):
+            return False
+        if(v2 not in self.listaAdj):
+            return False
+        if(v2 not in self.listaAdj[v1]):
+            return False
+        return True

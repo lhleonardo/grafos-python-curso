@@ -1,5 +1,7 @@
 from Estruturas.MatrizAdjacencia import MatrizAdjacencia
 from Estruturas.ListaAdjacencia import ListaAdjacencia
+from Busca import BuscaProfundidade
+
 def main():
     matriz = MatrizAdjacencia()
     matriz.adicionaVertice("thuza")
@@ -20,5 +22,7 @@ def main():
     lista.adicionaAresta("ribo", "humil", "topparser")
 
     print(lista)
+
+    BuscaProfundidade.buscaProfundidade(lista)
 
 main()
