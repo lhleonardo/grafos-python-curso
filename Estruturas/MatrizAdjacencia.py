@@ -1,4 +1,5 @@
 from Estruturas.Vertice import Vertice
+
 class MatrizAdjacencia:
     matriz = None
     vertices = None
@@ -13,6 +14,7 @@ class MatrizAdjacencia:
 
         v = Vertice(nome)
         self.vertices[nome] = v
+
         self.matriz[nome] = {}
         for chave in self.matriz:
             self.matriz[nome][chave] = ""

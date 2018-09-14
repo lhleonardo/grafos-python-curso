@@ -8,10 +8,12 @@ def buscaProfundidade(grafo):
             buscaProfundidadeRecursivo(grafo, vertices[chave], None)
 
     for vertice in vertices:
-        print("Anterior:")
+        print("Anterior:", end=' ')
         if(vertices[vertice].anterior != None):
             print(vertices[vertice].anterior.nome)
-        print('vertice:')
+        else:
+            print("None")
+        print('vertice:', end=' ')
         print(vertices[vertice].nome)
         print()
 
