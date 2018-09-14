@@ -1,6 +1,7 @@
 from Estruturas.MatrizAdjacencia import MatrizAdjacencia
 from Estruturas.ListaAdjacencia import ListaAdjacencia
 from Busca import BuscaProfundidade
+from Busca import BuscaLargura
 
 def main():
     matriz = MatrizAdjacencia()
@@ -27,6 +28,7 @@ def main():
 
     print(lista)
 
-    BuscaProfundidade.buscaProfundidade(lista)
+    BuscaProfundidade.buscaProfundidade()
+    BuscaLargura.buscaLargura(matriz)
 
 main()

@@ -48,3 +48,9 @@ class MatrizAdjacencia:
             return False
         return True
 
+    def getVizinhos(self, v):
+        vizinhos = []
+        for chave in self.matriz:
+            if(self.matriz[v][chave] != ""):
+                vizinhos.append(chave)
+        return vizinhos

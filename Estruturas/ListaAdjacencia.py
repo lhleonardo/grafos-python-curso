@@ -40,3 +40,12 @@ class ListaAdjacencia:
         if(v2 not in self.listaAdj[v1]):
             return False
         return True
+
+    def getVizinhos(self, v):
+        vizinhos = []
+        listaVizinhos = self.listaAdj[v]
+        viz = listaVizinhos.inicio
+        while(viz != None):
+            vizinhos.append(viz.nome)
+            viz = viz.proximo
+        return vizinhos
