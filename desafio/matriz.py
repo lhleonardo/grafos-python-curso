@@ -9,6 +9,7 @@ class MatrizAdjacencia:
         self.matriz = {}
         self.vertices = {}
 
+
     def adicionaVertice(self, nome):
         if (nome in self.vertices):
             return "Item já foi inserido"
@@ -16,16 +17,31 @@ class MatrizAdjacencia:
         self.vertices[nome] = Vertice(nome)
         self.matriz[nome] = {}
 
+        # por que isso não apaga a relação
         for chave in self.matriz:
-            self.matriz[chave][nome] = 0
-            self.matriz[nome][chave] = 0
+            self.matriz[chave][nome] = "-"
+            self.matriz[nome][chave] = "-"
+    
+    
     def adicionaRelacao(self, vertice1, vertice2, relacao):
-        if (vertice1 not in self.matriz or vertice2 in not self.matriz):
+        if (vertice1 not in self.matriz or vertice2 not in self.matriz):
             return "Um dos vertices nao existem"
         
-        if (self.matriz[vertice1][vertice2] )
+        if (self.matriz[vertice1][vertice2] != "-"):
+            return "Já existem relações"
 
         self.matriz[vertice1][vertice2] = relacao
+
+        return "Inserido"
+
+    
+    def saoVizinhos(self, vertice1, vertice2):
+        if (vertice1 not in self.matriz or vertice2 not in self.matriz):
+            return False
+        
+        return self.matriz[vertice1][vertice2] != ""
+
+    
     def __str__(self):
         saida = "\t"
 

@@ -16,6 +16,9 @@
 #             resposta = input("{0} está relacionado com {1}? [S/n] ".format(nomes[i], nomes[j]))
 #             if resposta is "S" or resposta is "s":
                 
-class Vertice: 
+class Vertice:
+    anterior = None 
+    
     def __init__(self, nome):
         self.__nome = nome
+        self.anterior = None
