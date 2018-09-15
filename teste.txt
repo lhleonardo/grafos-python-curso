@@ -1,0 +1,6 @@
+graph G {
+thuza -- ribo [ label= parser ]
+thuza -- humil [ label= parser2 ]
+ribo -- humil [ label= topparser ]
+sil -- job [ label= parzer ]
+}

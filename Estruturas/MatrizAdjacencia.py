@@ -54,3 +54,6 @@ class MatrizAdjacencia:
             if(self.matriz[v][chave] != ""):
                 vizinhos.append(chave)
         return vizinhos
+
+    def retornaRelacao(self, v1, v2):
+        return self.matriz[v1][v2]

@@ -49,3 +49,11 @@ class ListaAdjacencia:
             vizinhos.append(viz.nome)
             viz = viz.proximo
         return vizinhos
+
+    def retornaRelacao(self, v1, v2):
+        vizinho = self.listaAdj[v1].inicio
+        while(vizinho != None and vizinho.nome != v2):
+            vizinho = vizinho.proximo
+        if(vizinho == None):
+            return ""
+        return vizinho.relacao

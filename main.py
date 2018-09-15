@@ -2,7 +2,7 @@ from Estruturas.MatrizAdjacencia import MatrizAdjacencia
 from Estruturas.ListaAdjacencia import ListaAdjacencia
 from Busca import BuscaProfundidade
 from Busca import BuscaLargura
-
+from ExportaArqGraph import ArquivoGraph
 def main():
     matriz = MatrizAdjacencia()
     matriz.adicionaVertice("thuza")
@@ -23,12 +23,17 @@ def main():
     lista.adicionaAresta("thuza", "ribo", "parser")
     lista.adicionaAresta("thuza", "humil", "parser2")
     lista.adicionaAresta("ribo", "humil", "topparser")
-    lista.adicionaAresta("sil", "job", "parseirs")
-    lista.adicionaAresta("job", "thuza", "parseirs")
+    lista.adicionaAresta("sil", "job", "parzer")
 
     print(lista)
 
-    BuscaProfundidade.buscaProfundidade()
+    BuscaProfundidade.buscaProfundidade(lista)
     BuscaLargura.buscaLargura(matriz)
+
+    arq = ArquivoGraph("teste")
+    arq.addMatriz(lista)
+    arq.close()
+
+
 
 main()
