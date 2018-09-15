@@ -1,0 +1,64 @@
+Um grupo de estudantes recém-graduados decidem abrir um negócio, mas não estão de acordo de quem será o presidente da empresa. Um dos membro será o presidente, e cada um dos outros integrantes terá exatamente um superior direto na hierarquia (não necessariamente o presidente, pois seu chefe pode ser um gerente regional, por exemplo). Cada chefe possui o salário estritamente maior que seus subordinados, portanto não há ciclagem nesta relação e podemos representar a hierarquia desta empresa por uma árvore enraizada.
+Com o objetivo de estabelecer quem serão as pessoas a ocupar os cargos de chefia, os integrantes classificaram as k pessoas mais profissionalmente bem sucedidas, e cada uma dessas enumerou de quais outros integrantes (bem sucedidos ou não) gostaria de ser o superior. Note que superior, neste contexto, significa ser um chefe, ou ser o chefe dos superiores (ou seja: ser o superior de um integrante não significa ser necessariamente seu chefe direto).
+Ajude essa empresa a criar uma hierarquia que satisfaça o desejo de seus integrantes. A solução, caso exista, não necessariamente é única.
+
+Entrada: Será dado inicialmente como entrada o nome dos graduandos. A palavra "fim" indica que acabaram-se os graduandos. Após isso será passado o nome de um graduando bem sucedido e de quem ele deseja ser superior. A palavra "fim" indicará o final da entrada.
+
+Saída: Você deve apresentar como saída o nome do graduando e quem é seu chefe imediato. Caso o graduando não tenha chefe, ele será o presidente e isso deverá ser apresentado.
+
+
+Exemplo 1:
+-Entrada:
+Maria
+Joao
+Carlos
+Tobias
+Jose
+Manuel
+Paulo
+fim
+Maria Joao
+Maria Tobias
+Carlos Tobias
+Carlos Paulo
+Manuel Paulo
+Jose Tobias
+Jose Manuel
+fim
+
+-Saída:
+Maria (José)
+João (Maria)
+Carlos (Maria)
+Tobias (Carlos)
+José (Presidente)
+
+Exemplo 2:
+-Entrada:
+Luis
+Mateus
+Pedro
+Leonardo
+Silva
+Leticia
+Carla
+Julio
+fim
+Luis Mateus
+Luis Pedro
+Luis Leonardo
+Luis Silva
+Luis Leticia
+Luis Julio
+Carla Luis
+fim
+
+-Saída:
+Luis (Carla)
+Mateus (Luis)
+Pedro (Luis)
+Silva (Luis)
+Leticia (Luis)
+Carla (Presidente)
+Julio (Luis)
+

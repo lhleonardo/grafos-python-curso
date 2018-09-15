@@ -24,7 +24,7 @@ class MatrizAdjacencia:
         if(self.matriz[nomeV1][nomeV2] != ""):
             return "Ja ha uma relacao entre os vertices"
         self.matriz[nomeV1][nomeV2] = relacao
-        self.matriz[nomeV2][nomeV1] = relacao
+        # self.matriz[nomeV2][nomeV1] = relacao
 
 
     def __str__(self):
